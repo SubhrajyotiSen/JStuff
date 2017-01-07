@@ -84,7 +84,7 @@
 
             const secondRotation = ( ( seconds / 60 ) * 360 ) + 90;
             const minuteRotation = ( ( minutes / 60 ) * 360 ) + 90;
-            const hourRotation = ( ( hours / 12 ) * 360 ) + 90 ;
+            const hourRotation = ( ( hours / 12 ) * 360 ) + 90 + ( ( minutes / 60 ) * 30 );
 
             secondsHand.style.transform = `rotate(${secondRotation}deg)`;
             minutesHand.style.transform = `rotate(${minuteRotation}deg)`;
